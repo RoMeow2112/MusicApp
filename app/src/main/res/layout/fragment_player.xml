@@ -20,7 +20,7 @@
             android:layout_height="50dp"
             android:layout_gravity="left"
             android:padding="14dp"
-            android:src="@drawable/ic_menu" />
+            android:src="@drawable/menu" />
 
         <TextView
             android:layout_width="match_parent"
