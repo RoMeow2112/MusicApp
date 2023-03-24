@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.UserProfile"
     android:orientation="vertical"
-    android:background="@color/primary">
+    android:background="@drawable/dark_background">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,18 +14,18 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_menu"
+            android:src="@drawable/menu"
             android:padding="14dp"/>
-        
-        
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
             android:layout_centerInParent="true"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:text="Settings"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -51,7 +51,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="User"
-                android:textColor="@color/black"
+                android:textColor="@color/primary"
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+84 964659844"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 android:layout_gravity="center"/>
 
@@ -70,13 +70,13 @@
                 android:paddingStart="30dp"
                 android:paddingEnd="30dp"
                 android:layout_gravity="center"
-                android:background="@drawable/round_back_secondary_100"
+                android:background="@color/primary"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
                 android:textColor="@color/black"/>
             
             <LinearLayout
-                android:background="@drawable/round_back_white10_20"
+                android:background="@color/primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -94,13 +94,14 @@
                         android:layout_height="40dp"
                         android:padding="12dp"
                         android:id="@+id/emailicon"
+                        android:background="@color/primary"
                         android:src="@drawable/email"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:text="nguyentrankhai123@gmail.com"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/emailicon"/>
 
@@ -112,6 +113,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:padding="12dp"
+                        android:background="@color/primary"
                         android:id="@+id/DoBicon"
                         android:src="@drawable/DoB"/>
                     <TextView
@@ -119,7 +121,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:text="21/12/2001"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/DoBicon"/>
 
@@ -132,13 +134,14 @@
                         android:layout_height="40dp"
                         android:padding="12dp"
                         android:id="@+id/homeicon"
+                        android:background="@color/primary"
                         android:src="@drawable/home"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:text="56 Tân Lập 2 khu phố 3 phường Hiệp Phú HCM"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/homeicon"/>
 
