@@ -17,12 +17,18 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         android:background="@color/primary">
 
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:titleTextColor="@color/primary"
             app:menu="@menu/search_btn">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="14dp"
+                android:src="@drawable/ic_menu" />
             <TextView
                 android:id="@+id/textMenu"
                 android:layout_width="match_parent"
