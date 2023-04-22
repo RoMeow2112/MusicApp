@@ -115,7 +115,7 @@
                         android:padding="12dp"
                         android:background="@color/primary"
                         android:id="@+id/DoBicon"
-                        android:src="@drawable/DoB"/>
+                        android:src="@drawable/dob"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

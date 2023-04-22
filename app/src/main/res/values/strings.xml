@@ -14,4 +14,14 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="reset_password">Reset Password</string>
+    <string name="app">App</string>
+    <string name="usermail">nguyentrankhai123@gmail.com</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_setting">Setting</string>
+    <string name="local_music">Local Music</string>
+    <string name="online_music">Online music</string>
+    <string name="music">Music</string>
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
 </resources>
