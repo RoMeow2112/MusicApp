@@ -25,6 +25,7 @@
                 android:background="@color/spotify_green_dark"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+
         </com.google.android.material.appbar.AppBarLayout>
 
         <FrameLayout
@@ -32,7 +33,21 @@
             android:layout_height="match_parent"/>
 
     </LinearLayout>
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    >
 
+    <ListView
+        android:id="@+id/listViewSong"
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+        android:layout_alignParentBottom="true"
+
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:padding="8dp" />
+</RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"

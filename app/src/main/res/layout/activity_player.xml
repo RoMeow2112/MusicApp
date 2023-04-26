@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Player"
+    tools:context=".PlayerActivity"
     android:background="@drawable/background"
     android:orientation="vertical"
     android:weightSum="10">
-    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
         android:gravity="center"
         android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="left"
-            android:padding="14dp"
-            android:src="@drawable/menu" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtsongname"
+            android:id="@+id/txtsn"
             android:layout_margin="20dp"
             android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
@@ -38,7 +30,6 @@
             android:textStyle="italic">
         </TextView>
 
-
         <ImageView
             android:layout_width="250dp"
             android:layout_height="250dp"
@@ -47,19 +38,21 @@
             android:src="@drawable/musicicon">
 
         </ImageView>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
             >
+
             <SeekBar
+                android:id="@+id/seekbar"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
-                android:layout_marginBottom="40dp"
-                android:id="@+id/seekbar">
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
 
             </SeekBar>
 
@@ -101,7 +94,7 @@
                 android:layout_height="70dp"
                 android:id="@+id/playbtn"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/ic_play">
+                android:background="@drawable/ic_pause">
 
             </Button>
             <Button
@@ -133,7 +126,7 @@
 
             </Button>
             <Button
-                android:id="@+id/btnfa"
+                android:id="@+id/btnfr"
                 android:layout_toLeftOf="@id/previousbtn"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="15dp"
@@ -142,6 +135,11 @@
                 android:layout_height="40dp">
 
             </Button>
+
+
+
+
+
         </RelativeLayout>
     </LinearLayout>
 

@@ -13,5 +13,7 @@
     <color name="colorButton">#1A1A1A</color>
     <color name="colorSignInBackground">#333333</color>
     <color name="editText">#BFBFBF</color>
+    <color name="spotify_green_dark">#FF10C60A</color>
+    <color name="spotify_green_light">#FF1ED760</color>
 
 </resources>
