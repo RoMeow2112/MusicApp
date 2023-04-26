@@ -25,11 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Playlist"
-            android:exported="false">
 
-        </activity>
         <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">

@@ -30,7 +30,8 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:id="@+id/content_frame"/>
 
     </LinearLayout>
 <RelativeLayout
@@ -38,7 +39,7 @@
     android:layout_height="0dp"
     >
 
-    <ListView
+   <!-- <ListView
         android:id="@+id/listViewSong"
         android:layout_width="match_parent"
         android:layout_height="676dp"
@@ -46,7 +47,7 @@
 
         android:divider="@android:color/transparent"
         android:dividerHeight="10.0sp"
-        android:padding="8dp" />
+        android:padding="8dp" />-->
 </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
