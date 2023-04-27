@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "971363000255",
-    "project_id": "music-app-e4119",
-    "storage_bucket": "music-app-e4119.appspot.com"
+    "project_number": "373587415970",
+    "firebase_url": "https://musicapp-4b24d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "musicapp-4b24d",
+    "storage_bucket": "musicapp-4b24d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:971363000255:android:0077fccda7bb8373a54b0a",
+        "mobilesdk_app_id": "1:373587415970:android:fea5275cb9d46fe36298fb",
         "android_client_info": {
           "package_name": "com.example.musicapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "971363000255-rtantu4rrn1psbirrpanhbeeleqnq5qj.apps.googleusercontent.com",
+          "client_id": "373587415970-8743doq3sg2q2869ktoaeq87c1hls7eg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCAh1HvsrwRuXIFc-daELxhFiVx8XnenlU"
+          "current_key": "AIzaSyA3Ov1wqFNQKARjVYNuep05d04EW1X8zM8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "971363000255-rtantu4rrn1psbirrpanhbeeleqnq5qj.apps.googleusercontent.com",
+              "client_id": "373587415970-8743doq3sg2q2869ktoaeq87c1hls7eg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
