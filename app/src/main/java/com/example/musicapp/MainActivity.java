@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        replaceFragment(new OnlineFragment());
-        navigationView.getMenu().findItem(R.id.nav_online).setChecked(true);
+        replaceFragment(new OfflineFragment());
+        navigationView.getMenu().findItem(R.id.nav_offline).setChecked(true);
     }
 
     @Override
@@ -48,17 +48,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
         if (id == R.id.nav_offline)
         {
-            if (mCurrentFragment != FRAGMENT_OFFLINE){
-                replaceFragment(new OfflineFragment());
-                mCurrentFragment = FRAGMENT_OFFLINE;
-            }
+            replaceFragment(new OfflineFragment());
+            mCurrentFragment = FRAGMENT_OFFLINE;
         }
         else if (id == R.id.nav_online)
         {
-            if (mCurrentFragment != FRAGMENT_ONLINE){
-                replaceFragment(new OnlineFragment());
-                mCurrentFragment = FRAGMENT_ONLINE;
-            }
+            replaceFragment(new OnlineFragment());
+            mCurrentFragment = FRAGMENT_ONLINE;
+
         }
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
