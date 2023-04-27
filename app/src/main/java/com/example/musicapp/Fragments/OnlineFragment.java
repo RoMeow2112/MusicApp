@@ -79,7 +79,8 @@ public class OnlineFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        recyclerView = getView().findViewById(R.id.recyclerView);
+        View view = inflater.inflate(R.layout.fragment_online, container, false);
+        recyclerView = view.findViewById(R.id.recyclerView);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),1);
         recyclerView.setLayoutManager(gridLayoutManager);
 

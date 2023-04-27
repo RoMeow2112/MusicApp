@@ -13,12 +13,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.musicapp.Fragments.OfflineFragment;
+import com.example.musicapp.Fragments.OnlineFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout mDrawerLayout;
     private static final int FRAGMENT_OFFLINE =0;
+    private static final int FRAGMENT_ONLINE =0;
     private  int mCurrentFragment = FRAGMENT_OFFLINE;
 
     @Override
@@ -37,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        replaceFragment(new OfflineFragment());
-        navigationView.getMenu().findItem(R.id.nav_offline).setChecked(true);
+        replaceFragment(new OnlineFragment());
+        navigationView.getMenu().findItem(R.id.nav_online).setChecked(true);
     }
 
     @Override
@@ -53,7 +55,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.nav_online)
         {
-
+            if (mCurrentFragment != FRAGMENT_ONLINE){
+                replaceFragment(new OnlineFragment());
+                mCurrentFragment = FRAGMENT_ONLINE;
+            }
         }
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
