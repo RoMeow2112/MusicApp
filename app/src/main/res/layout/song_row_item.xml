@@ -45,6 +45,16 @@
 
         </TextView>
 
+        <TextView
+            android:id="@+id/txturl"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/txtsongname"
+            android:layout_marginEnd="2dp"
+            android:text="URL">
+
+        </TextView>
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

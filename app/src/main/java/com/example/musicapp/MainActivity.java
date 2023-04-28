@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -17,7 +18,7 @@ import com.example.musicapp.Fragments.OnlineFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+    MediaPlayer m;
     private DrawerLayout mDrawerLayout;
     private static final int FRAGMENT_OFFLINE =0;
     private static final int FRAGMENT_ONLINE =0;
